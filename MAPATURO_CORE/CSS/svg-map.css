@@ -74,12 +74,40 @@
     transform: translateY(4px);
 }
 
-.guessByShape:hover {
-    transform: scale(1.05);
+.map-wrapper {
+    overflow: hidden;
 }
 
-svg path {
-    fill: #21805d;
+svg {
+    translate: -15% 0%;
+}
+
+svg path{
     stroke: #fff;
-    stroke-width: .5;
+    stroke-width: 1.5;
+}
+/* islands */
+svg > g > g:hover{
+    fill: blue;
+}
+/* region */
+svg > g > g > g:hover{
+    fill: red;
+}
+/* province */
+svg > g > g > g > g:hover{
+    fill: green;
+}
+/* municipality */
+svg > g > g > g > g> path:hover{
+    fill: yellow;
+}
+
+.map-tools {
+    position: relative;
+    z-index: 200;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    text-align: right;
 }

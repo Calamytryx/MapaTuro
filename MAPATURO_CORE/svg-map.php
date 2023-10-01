@@ -42,11 +42,14 @@
     </div>
 </section>
 
-<section class="container-fluid border" id="map">
-    <div class="container d-flex align-items-center justify-content-center border mx-auto">
-        <div class="row map-wrapper border">
-            <div class="col-12">
+<section class="container-fluid" id="map">
+    <div class="container d-flex align-items-center justify-content-center mx-auto">
+        <div class="map-wrapper">
+            <div class="map-container">
                 <?php include("phi-svg.php"); ?>
+            </div>
+            <div class="map-tools">
+                <a onclick="resetMapPosition()"><i class="fa-regular fa-square-minus"></i></a>
             </div>
         </div>
     </div>
