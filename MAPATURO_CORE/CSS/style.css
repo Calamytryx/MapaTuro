@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    background-image: linear-gradient(rgb(85, 218, 251), rgb(102, 222, 241), rgb(52, 247, 227));
+    height: 100vh;
+    width: 100%;
+}
+
+h1, p {
+    font-family: 'Gabarito', cursive;
+}
