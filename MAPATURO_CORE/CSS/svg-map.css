@@ -1,113 +1,26 @@
-#remote-buttons {
-    position: absolute;
-    translate: 200px 300px;
-}
-
-#remote-buttons h1 {
-    font-weight: 700;
-    font-size: 4rem;
-}
-
-.floating-buttons button {
-    font-size: 1.5rem;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #21805d;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #0f3929;
-}
-
-.floating-buttons button:active {
-    background-color: #21805d;
-    box-shadow: 0 5px #0f3929;
-    transform: translateY(4px);
-}
-
-.game-modes-visible {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
+#svg-map {
     width: 100%;
-    height: 100%;
-    background-color: rgba(26, 26, 26, 0.652);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Adjust the z-index as needed */
-    backdrop-filter: blur(20px);
-}
-
-.game-modes-hidden {
-    display: none;
-}
-
-#game-modes-choices {
     height: 100vh;
-    width: 100%;
-}
-
-#close-button-game-modes i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-#close-button-game-modes i:hover {
-    color: rgb(171, 171, 171);
-}
-
-#game-modes-modal .card-body button {
-    font-size: 1.5rem;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #21805d;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #0f3929;
-}
-
-#game-modes-modal .card-body button:active {
-    background-color: #21805d;
-    box-shadow: 0 5px #0f3929;
-    transform: translateY(4px);
 }
 
 .map-wrapper {
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
-svg {
-    translate: -15% 0%;
+.map-wrapper svg {
+    translate: 120% 0%;
 }
 
-svg path{
-    stroke: #fff;
-    stroke-width: 1.5;
-}
-/* islands */
-svg > g > g:hover{
-    fill: blue;
-}
-/* region */
-svg > g > g > g:hover{
-    fill: red;
-}
-/* province */
-svg > g > g > g > g:hover{
-    fill: green;
-}
-/* municipality */
-svg > g > g > g > g> path:hover{
-    fill: yellow;
+.map-wrapper svg > g > g > g > g {
+    fill: #A0C49D;
+    stroke: #EDF3EC;
+    stroke-width: 5;;
 }
 
-.map-tools {
-    position: relative;
-    z-index: 200;
-    bottom: 20px;
-    right: 20px;
-    font-size: 2rem;
-    text-align: right;
+.map-wrapper svg > g > g > g > g:hover {
+    fill: #A0C49D;
+    stroke: #EDF3EC;
+    stroke-width: 5;;
 }
