@@ -6,22 +6,22 @@
         </div>
         <div class="registration-form" id="registration-form">
             <h1 class="text-center p-3">Register</h1>
-            <form class="row px-lg-5 p-3 g-3">
+            <form class="row px-lg-5 p-3 g-3" action="includes/register.inc.php" method="post">
                 <div class="col-md-4">
                     <label for="register-fname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="register-fname" placeholder="First Name">
+                    <input type="text" class="form-control" id="register-fname" name="register-fname" placeholder="First Name">
                 </div>
                 <div class="col-md-4">
                     <label for="register-lname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="register-lname" placeholder="Last Name">
+                    <input type="text" class="form-control" id="register-lname" name="register-lname" placeholder="Last Name">
                 </div>
                 <div class="col-md-4">
                     <label for="register-username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="register-username" placeholder="Username">
+                    <input type="text" class="form-control" id="register-username" name="register-username" placeholder="Username">
                 </div>
                 <div class="col-md-4">
                     <label for="register-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="register-email" placeholder="Email Address">
+                    <input type="email" class="form-control" id="register-email" name="register-email" placeholder="Email Address">
                 </div>
                 <div class="col-md-4">
                     <label for="register-gender" class="form-label">Gender</label>
@@ -34,11 +34,11 @@
                 </div>
                 <div class="col-md-4">
                     <label for="register-password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="register-password" placeholder="Password">
+                    <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Password">
                 </div>
                 <div class="col-12">
                     <label for="register-profile" class="form-label">User Profile</label>
-                    <input class="form-control" type="file" id="register-profile">
+                    <input class="form-control" type="file" id="register-profile" name="register-profile">
                 </div>
                 <div class="col-12">
                     <div class="form-check">
