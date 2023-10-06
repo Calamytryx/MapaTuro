@@ -16,76 +16,105 @@
     width: 30vw;
 }
 
-.play-mode button {
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    border-radius: 20px;
-    background-color: #04AA6D;
-    border: 4px solid #3e8e41;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    padding: 3px 30px;
+a,
+a:hover {
+    text-decoration: none;
 }
 
-.play-mode button:hover {
-    transform: translateY(4px);
+.play {
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 4rem;
+    width: 15rem;
+    background-color: #af6113;
+    background-image: linear-gradient(90deg, #f59739, #f48618);
 }
 
-.play-mode button:active {
-  background-color: #3e8e41;
-  transform: translateY(4px);
+.learn,
+.leaderboard {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 12rem;
 }
 
-.learn-mode button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
+.learn {
+    background-color: #6539de;
+    background-image: linear-gradient(90deg, #9939f3, #8713f3);
+}
+
+.leaderboard {
+    background-color: #2941ba;
+    background-image: linear-gradient(90deg, #3b5af5, rgb(37, 71, 243));
+}
+
+.butn:link,
+.butn:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-.learn-mode button:hover {background-color: #3e8e41}
-
-.learn-mode button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.leaderboards button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
     color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.leaderboards button:hover {background-color: #3e8e41}
-
-.leaderboards button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.butn::before {
+    background: #fff;
+    content: "";
+    height: 155px;
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    width: 50px;
+    transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.main-button .btn:hover {
-    transform: scale(1.1);
-    transition: all ease-in-out 0.3s;
+.butn::after {
+    background: #fff;
+    content: "";
+    height: 20rem;
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 8rem;
 }
 
-#dropdown-list button {
+.butn__new::before {
+    left: -50%;
+}
+
+.butn__new::after {
+    left: -100%;
+}
+
+.butn:hover,
+.butn:active {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.butn__new:hover::before {
+    left: 120%;
+    opacity: 0.5s;
+}
+
+.butn__new:hover::after {
+    left: 200%;
+    opacity: 0.6;
+}
+
+.butn span {
+    z-index: 20;
+}
+
+#dropdown-button {
     background-color: #04AA6D;
     border: 4px solid #3e8e41;
     border-radius: 25px;
@@ -114,4 +143,8 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
+}
+
+.region-list-body a:hover {
+    color: #6e6e6e;
 }

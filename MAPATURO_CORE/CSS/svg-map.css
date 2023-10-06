@@ -4,7 +4,6 @@
 }
 
 .map-wrapper {
-    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -14,9 +13,13 @@
     stroke: #EDF3EC;
     stroke-width: 5;
     translate: 140% 0%;
+    display: block;
 }
 
 #svg-map-muni {
     display: none;
-    translate: 120% 0%;
+    fill: #A0C49D;
+    stroke: #EDF3EC;
+    stroke-width: 5;
+    translate: 100% 0%;
 }
