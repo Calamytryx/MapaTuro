@@ -1,8 +1,8 @@
 <div class="main-container container-fluid ">
     <div class="container-fluid" id="svg-map">
         <div class="map-wrapper">
-            <?php include("svg-map-region.php"); ?>
-            <?php include("svg-map.php"); ?>
+            <?php include("SVGMAPS/svg-map-region.php"); ?>
+            <?php include("SVGMAPS/svg-map.php"); ?>
         </div>
     </div>
 
