@@ -1,9 +1,10 @@
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg px-lg-3 px-1">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="Pictures/nav_logo_color.png" alt="Logo"></a>
         <ul class="navbar-nav">
             <li class="nav-item mx-2 px-2">
-                <a class="nav-link p-2" aria-disabled="true">ABOUT US</a>
+                <a class="nav-link p-2" onclick="aboutus()" href="#">ABOUT US</a>
             </li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,10 +24,10 @@
                     </ul>
                 </li>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link p-2" aria-disabled="true">SIGN IN</a>
+                    <a class="nav-link p-2" onclick="register()" href="#">SIGN UP</a>
                 </li>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link p-2" aria-disabled="true">LOG IN</a>
+                    <a class="nav-link p-2" onclick="login()" href="#">LOG IN</a>
                 </li>
             </ul>
         </div>
@@ -39,6 +40,18 @@
         document.getElementById('selected-language').textContent = languageText;
     }
 
+    function aboutus() {
+        const about =document.getElementById("aboutus-container");
+        about.style.display = "block";
+    }
 
+    function register() {
+        const regform = document.getElementById("regforms-container");
+        regform.style.display = "block";
+    }
 
+    function login() {
+        const regform = document.getElementById("logforms-container");
+        regform.style.display = "block";
+    }
 </script>

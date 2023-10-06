@@ -9,18 +9,14 @@
     overflow: hidden;
 }
 
-.map-wrapper svg {
+#svg-map-region {
+    fill: #A0C49D;
+    stroke: #EDF3EC;
+    stroke-width: 5;
+    translate: 140% 0%;
+}
+
+#svg-map-muni {
+    display: none;
     translate: 120% 0%;
-}
-
-.map-wrapper svg > g > g > g > g {
-    fill: #A0C49D;
-    stroke: #EDF3EC;
-    stroke-width: 5;;
-}
-
-.map-wrapper svg > g > g > g > g:hover {
-    fill: #A0C49D;
-    stroke: #EDF3EC;
-    stroke-width: 5;;
 }

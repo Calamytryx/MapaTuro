@@ -1,4 +1,4 @@
-<svg width="700" height="100%" viewBox="0 0 12329 16536" version="1.1" id="svg1"
+<svg width="650" height="100%" viewBox="0 0 12329 16536" version="1.1" id="svg-map-muni"
     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
     <g id="Philippines">
         <g id="Mindanao">

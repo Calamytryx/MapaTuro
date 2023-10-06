@@ -1,0 +1,36 @@
+.regforms-container, .logforms-container, .aboutus-container {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    background-color: #ededed00;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 0 50px rgba(0,0,0,0.9) inset;
+}
+
+.regform-wrapper, .logform-wrapper, .aboutus-wrapper {
+    height: 100vh;
+}
+
+#registration-form, .login-form {
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.close-button i {
+    font-size: 2rem;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #d2d1d1;
+}
+
+.close-button i:hover {
+    color: #ffffff;
+}
+
