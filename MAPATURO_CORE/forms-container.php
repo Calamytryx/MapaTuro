@@ -9,32 +9,37 @@
             <form class="row px-lg-5 p-3 g-3" action="includes/register.inc.php" method="post">
                 <div class="col-md-4">
                     <label for="register-fname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="register-fname" name="register-fname" placeholder="First Name">
+                    <input type="text" class="form-control" id="register-fname" name="register-fname"
+                        placeholder="First Name">
                 </div>
                 <div class="col-md-4">
                     <label for="register-lname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="register-lname" name="register-lname" placeholder="Last Name">
+                    <input type="text" class="form-control" id="register-lname" name="register-lname"
+                        placeholder="Last Name">
                 </div>
                 <div class="col-md-4">
                     <label for="register-username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="register-username" name="register-username" placeholder="Username">
+                    <input type="text" class="form-control" id="register-username" name="register-username"
+                        placeholder="Username">
                 </div>
                 <div class="col-md-4">
                     <label for="register-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="register-email" name="register-email" placeholder="Email Address">
+                    <input type="email" class="form-control" id="register-email" name="register-email"
+                        placeholder="Email Address">
                 </div>
                 <div class="col-md-4">
                     <label for="register-gender" class="form-label">Gender</label>
-                    <select id="register-gender" class="form-select">
+                    <select id="register-gender" class="form-select" name="register-gender">
                         <option selected>Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="o">Others</option>
                     </select>
                 </div>
                 <div class="col-md-4">
                     <label for="register-password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Password">
+                    <input type="password" class="form-control" id="register-password" name="register-password"
+                        placeholder="Password">
                 </div>
                 <div class="col-12">
                     <label for="register-profile" class="form-label">User Profile</label>
@@ -64,14 +69,16 @@
         </div>
         <div class="login-form" id="login-form">
             <h1 class="text-center p-3">Log In</h1>
-            <form class="row px-lg-5 p-3 g-3">
+            <form class="row px-lg-5 p-3 g-3" action="includes/login.inc.php" method="post">
                 <div class="col-md-12">
                     <label for="login-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="login-email" placeholder="Email Address">
+                    <input type="email" class="form-control" id="login-email" name="login-email"
+                        placeholder="Email Address">
                 </div>
                 <div class="col-md-12">
                     <label for="login-password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="login-password" placeholder="Password">
+                    <input type="password" class="form-control" id="login-password" name="login-password"
+                        placeholder="Password">
                 </div>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary">Log in</button>
@@ -94,12 +101,12 @@
 </div>
 
 <script>
-    function closeRegform() {
-        const regform = document.getElementById("regforms-container");
-        const logform = document.getElementById("logforms-container");
-        const about = document.getElementById("aboutus-container");
-        regform.style.display = "none";
-        logform.style.display = "none";
-        about.style.display = "none";
-    }
+function closeRegform() {
+    const regform = document.getElementById("regforms-container");
+    const logform = document.getElementById("logforms-container");
+    const about = document.getElementById("aboutus-container");
+    regform.style.display = "none";
+    logform.style.display = "none";
+    about.style.display = "none";
+}
 </script>
