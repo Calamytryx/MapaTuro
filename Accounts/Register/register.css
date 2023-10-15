@@ -1,0 +1,37 @@
+.register-page {
+    background-color: #031317 !important;
+}
+
+.register-modal {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(39, 38, 38, 0.178);
+    backdrop-filter: blur(5px);
+}
+
+.register-modal-wrapper {
+    height: 100vh;
+}
+
+.register-form {
+    width: 800px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.close-button i {
+    font-size: 2rem;
+    color: white;
+}
+
+.close-button i:hover {
+    color: rgb(174, 174, 174);
+}

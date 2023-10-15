@@ -1,0 +1,59 @@
+.guessbyname-container {
+    width: 100%;
+    height: 85vh;
+}
+
+.guessbyname-main-wrapper {
+    background-color: #F8F9FA;
+    border-radius: 20px;
+}
+
+.guessbyname-map svg {
+    width: 300px;
+}
+
+.guessbyname-map .container {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.156);
+}
+
+.guessbyname-dropdown button {
+    background-color: #6BCB77;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.156);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.region-scroll {
+    background-color: white;
+    border-radius: 20px; 
+    max-height: 300px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.region-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+.region-item:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.region-item a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.guessbyname-choices button {
+    background-color: #6BCB77;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.156);
+    color: white;
+    font-size: 1.2rem;
+}
