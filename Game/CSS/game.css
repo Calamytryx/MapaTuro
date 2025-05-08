@@ -1,0 +1,236 @@
+.game-container {
+    color: var(--white);
+}
+
+#game-panel {
+    background: var(--lowblue);
+    border-radius: 3rem;
+    width: 40vw;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-size: clamp(1rem, 1vw + 1rem, 2rem) !important;
+    font-weight: 500;
+    z-index: 89;
+
+    #location {
+        width: 18vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+#question-col {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+
+    #question, #prompt {
+        font-size: clamp(1rem, 2vw + 1rem, 5rem) !important;
+        font-weight: 700;
+        max-width: 20ch;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    #choices-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        button {
+            border-radius: 1rem;
+            border-bottom: 5px solid var(--shadow) !important;
+            min-width: 30vw;
+            max-width: 30vw;
+            min-height: 10vh;
+            font-size: clamp(1rem, 1vw + 1rem, 2.5rem);
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        :nth-child(1) {
+            background: var(--orange);
+        }
+
+        :nth-child(1):hover {
+            background: var(--hoverorange);
+        }
+
+        :nth-child(2) {
+            background: var(--buttongreen);
+        }
+
+        :nth-child(2):hover {
+            background: var(--buttonhovergreen);
+        }
+
+        :nth-child(3) {
+            background: var(--purple);
+        }
+
+        :nth-child(3):hover {
+            background: var(--hoverpurple);
+        }
+
+        :nth-child(4) {
+            background: var(--buttonblue);
+        }
+
+        :nth-child(4):hover {
+            background: var(--buttonhoverblue);
+        }
+    }
+}
+
+.map_list {
+    display: grid;
+    grid-template-columns: 1fr !important;
+
+    >div {
+        >div {
+            max-height: 60vh;
+            max-width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+    }
+}
+
+.compliment {
+    position: absolute;
+    display: none;
+    place-items: center;
+    z-index: 99;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgba(0, 0, 0, 0.700);
+    padding: 0;
+
+    .compliment-wrapper {
+        background: rgba(0, 0, 0, 0.700);
+        display: grid;
+        place-items: center;
+        position: relative;
+        min-height: 100vh;
+        min-width: 100vw;
+        font-weight: 700;
+        color: var(--white);
+        text-align: center;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        .compliment-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            position: relative;
+            z-index: 9999;
+
+            i {
+                font-size: clamp(1rem, 10vw + 1rem, 10rem);
+            }
+
+            p {
+                font-weight: 500;
+                font-size: clamp(1rem, 2vw + 1rem, 3rem);
+            }
+
+            #compliment {
+                font-size: clamp(1rem, 8vw + 1rem, 10rem);
+                font-weight: 700;
+            }
+
+            img {
+                position: absolute;
+                max-height: 40vh;
+                bottom: -50%;
+            }
+
+            #boygo,
+            #boymagnify {
+                left: -10;
+            }
+
+            #boytuwa,
+            #boysad {
+                right: -10;
+            }
+
+            #boy {
+                left: -50;
+            }
+
+            #check {
+                color: var(--buttongreen);
+            }
+
+            #cross {
+                color: var(--buttonred);
+            }
+
+            #star {
+                color: var(--yellow);
+            }
+
+            #button-compliment {
+                background: var(--purple);
+                border-bottom: 5px solid var(--shadow) !important;
+                border-radius: 1rem;
+                font-size: clamp(1rem, 1vw + 1rem, 3rem);
+                min-width: 13vw;
+                min-height: 7vh;
+                font-weight: 600;
+            }
+
+            #button-compliment:hover {
+                background: var(--hoverpurple);
+            }
+
+            #result-button-choices {
+                gap: 1rem !important;
+            }
+
+            #quit {
+                background: var(--buttonred);
+                border-bottom: 5px solid var(--shadow) !important;
+                border-radius: 1rem;
+                font-size: clamp(1rem, 1vw + 1rem, 3rem);
+                min-width: 13vw;
+                min-height: 7vh;
+                font-weight: 600;
+            }
+
+            #quit:hover {
+                background: var(--buttonhoverred);
+            }
+
+            #retry {
+                background: var(--orange);
+                border-bottom: 5px solid var(--shadow) !important;
+                border-radius: 1rem;
+                font-size: clamp(1rem, 1vw + 1rem, 3rem);
+                min-width: 13vw;
+                min-height: 7vh;
+                font-weight: 600;
+            }
+
+            #retry:hover {
+                background: var(--hoverorange);
+            }
+        }
+    }
+}

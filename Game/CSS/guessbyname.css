@@ -1,0 +1,122 @@
+svg path {
+    fill: var(--buttongreen);
+    stroke-width: 5;
+}
+
+.bordered {
+    stroke: #e9e9e9;
+}
+
+.borderless {
+    stroke: var(--buttongreen);
+}
+
+svg path.bordered:hover {
+    fill: #1FB00F;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+svg path.borderless:hover {
+    cursor: pointer;
+}
+
+.first-guess {
+    fill: #d1d1d1;
+}
+
+.first-guess {
+    animation-name: first-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes first-anim {
+    0% {
+        fill: #d1d1d1;
+    }
+
+    25% {
+        fill: #d1d1d1;
+    }
+
+    100% {
+        fill: var(--buttongreen);
+    }
+}
+
+.second-guess {
+    fill: #ffd725;
+}
+
+.second-guess {
+    animation-name: second-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes second-anim {
+    0% {
+        fill: #ffd725;
+    }
+
+    25% {
+        fill: #ffd725;
+    }
+
+    100% {
+        fill: var(--buttongreen);
+    }
+}
+
+.third-guess {
+    fill: #f86300;
+}
+
+.third-guess {
+    animation-name: third-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes third-anim {
+    0% {
+        fill: #f86300;
+    }
+
+    25% {
+        fill: #f86300;
+    }
+
+    100% {
+        fill: var(--buttongreen);
+    }
+}
+
+.fourth-guess {
+    fill: #ff0000;
+}
+
+.fourth-guess {
+    animation-name: fourth-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes fourth-anim {
+    0% {
+        fill: #ff0000;
+    }
+
+    25% {
+        fill: #ff0000;
+    }
+
+    100% {
+        fill: var(--buttongreen);
+    }
+}

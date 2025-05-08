@@ -1,0 +1,138 @@
+.correct-answer {
+    background-color: #00fa53 !important;
+}
+
+.wrong-answer {
+    background-color: #ff0000 !important;
+}
+
+svg path {
+    fill: rgb(185, 185, 185);
+    stroke: rgb(87, 87, 87);
+    stroke-width: 5;
+}
+
+.highlighted {
+    fill: var(--lightblue);
+    stroke: red;
+    stroke-width: 5;
+    animation-name: highlight-anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*highlighted animation*/
+@keyframes highlight-anim {
+    0% {
+        fill: var(--lightblue);
+    }
+
+    50% {
+        fill: var(--lowblue);
+    }
+
+    100% {
+        fill: var(--lightblue);
+    }
+}
+
+.first-guess {
+    fill: #3dc03c;
+}
+
+.first-guess{
+    animation-name: first-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes first-anim {
+    0% {
+        fill: #3dc03c;
+    }
+
+    25% {
+        fill: #3dc03c;
+    }
+
+    100% {
+        fill: rgb(185, 185, 185);
+    }
+}
+
+.second-guess {
+    fill: #ffd725;
+}
+
+.second-guess {
+    animation-name: second-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes second-anim {
+    0% {
+        fill: #ffd725;
+    }
+
+    25% {
+        fill: #ffd725;
+    }
+
+    100% {
+        fill: rgb(185, 185, 185);
+    }
+}
+
+.third-guess {
+    fill: #f86300;
+}
+
+.third-guess {
+    animation-name: third-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes third-anim {
+    0% {
+        fill: #f86300;
+    }
+
+    25% {
+        fill: #f86300;
+    }
+
+    100% {
+        fill: rgb(185, 185, 185);
+    }
+}
+
+.fourth-guess {
+    fill: #ff0000;
+}
+
+.fourth-guess {
+    animation-name: fourth-anim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes fourth-anim {
+    0% {
+        fill: #ff0000;
+    }
+
+    25% {
+        fill: #ff0000;
+    }
+
+    100% {
+        fill: rgb(185, 185, 185);
+    }
+}
